@@ -1,0 +1,186 @@
+body { /*crée sur csshero.org/mesher/*/
+    background-color: hsla(0, 0%, 100%, 1);
+    background-image:
+        radial-gradient(at 95% 79%, hsla(283, 93%, 62%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(32, 0%, 100%, 1) 0px, transparent 50%);
+}
+
+@font-face {
+    font-family: 'healTheWebA';
+    src: url("fonts/HealTheWebA-Regular.otf");
+}
+
+@font-face {
+    font-family: 'healTheWebB';
+    src: url("fonts/montserrat_extrabold.ttf");
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: 'healTheWebA', sans-serif;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px #b3b3b3;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+header {
+    padding-top: 10px;
+}
+
+.titre-principale,
+.description {
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+nav {
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.choix {
+    display: flex;
+    background-color: #444cf7;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.choix.active {
+    background-color: #383c83;
+}
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.affiches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.poster {
+    width: 150px;
+    height: 235px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+    display: flex;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.titre-film {
+    color: black;
+    text-decoration: none;
+}
+
+.titre-film:hover {
+    text-decoration: underline;
+}
+
+.info-film {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.films {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 667px) {
+    .titre-principale {
+        padding-left: 5%;
+    }
+
+    nav {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .films {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .description {
+        padding-left: 3%;
+    }
+
+    main {
+        padding: 0 3%;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .poster {
+        width: 100%;
+        height: auto;
+    }
+
+    .synopsis {
+        font-size: 14px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    h2 {
+        margin: 0px;
+    }
+
+    .poster {
+        width: 250px;
+        height: 335px;
+    }
+}
