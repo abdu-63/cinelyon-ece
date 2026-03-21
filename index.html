@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="images/favicon_talking_red.gif" type="image/gif">
     <title>CinéLyon</title>
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -14,13 +15,27 @@
         <h1 class="titre-principale">CinéLyon</h1>
         <p class="description">Les films à l'affiche chez CinéLyon</p>
     </header>
-
+    <!-- Menu de navigation pour les écrans larges 
     <nav>
         <div class="menu">
             <div class="choix active"><a href="index.html">A l'affiche</a></div>
             <div class="choix"><a href="favoris.html">Favoris</a></div>
             <div class="choix"><a href="calendrier.html">Calendrier</a></div>
         </div>
+    </nav>
+    -->
+    <button class="burger" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="menu" id="menu">
+        <ul>
+            <li class="choix active"><a href="index.html">A l'affiche</a></li>
+            <li class="choix"><a href="favoris.html">Favoris</a></li>
+            <li class="choix"><a href="calendrier.html">Calendrier</a></li>
+        </ul>
     </nav>
 
     <div class="films">
