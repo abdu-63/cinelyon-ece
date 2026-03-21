@@ -165,13 +165,13 @@ footer {
     margin-right: 10px;
 }
 
-.dates-container {
+.horaire {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.date-pill {
+.date {
     padding-inline: 10px;
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -179,36 +179,36 @@ footer {
     background: white;
 }
 
-.date-pill.active {
+.date.active {
     background: #444cf7;
     color: white;
     border-color: #444cf7;
 }
 
-.showings-container {
+.conteneur-infos {
     display: none;
     flex-direction: column;
     gap: 15px;
 }
 
-.showings-container.active {
+.conteneur-infos.active {
     display: flex;
 }
 
-.showing-card {
+.infos-card {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.cinema-name {
+.cinema {
     background: #444cf7;
     color: white;
     padding-inline: 10px;
     border-radius: 12px;
 }
 
-.showing-time {
+.infos-date {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -217,12 +217,12 @@ footer {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.showing-time .version {
+.infos-date .langue {
     font-weight: bold;
     color: gray;
 }
 
-.showing-time .time {
+.infos-date .duree {
     color: blue;
     font-weight: bold;
 }

@@ -5,27 +5,23 @@ burger.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
-// Logique pour le calendrier fictif
-const calendarSections = document.querySelectorAll('.calendar-section');
+let SectionCalendrier = document.querySelectorAll('.calendrier');
 
-calendarSections.forEach(section => {
-    const datePills = section.querySelectorAll('.date-pill');
-    const showingsContainer = section.querySelector('.showings-container');
+SectionCalendrier.forEach(section => {
+    let date = section.querySelectorAll('.date');
+    let ConteneurInfos = section.querySelector('.conteneur-infos');
     
-    datePills.forEach(pill => {
+    date.forEach(pill => {
         pill.addEventListener('click', () => {
-            const isActive = pill.classList.contains('active');
+            let isActive = pill.classList.contains('active');
             
-            // Enlève la classe active de tous les boutons de cette section
-            datePills.forEach(p => p.classList.remove('active'));
+            date.forEach(p => p.classList.remove('active'));
             
             if (isActive) {
-                // Si c'était déjà actif, on désactive (on cache)
-                if (showingsContainer) showingsContainer.classList.remove('active');
+                if (ConteneurInfos) ConteneurInfos.classList.remove('active');
             } else {
-                // Sinon, on active le bouton cliqué et on affiche le conteneur
                 pill.classList.add('active');
-                if (showingsContainer) showingsContainer.classList.add('active');
+                if (ConteneurInfos) ConteneurInfos.classList.add('active');
             }
         });
     });
