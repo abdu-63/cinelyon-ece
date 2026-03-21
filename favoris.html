@@ -16,12 +16,18 @@
         <p class="description">Les films à l'affiche chez CinéLyon</p>
     </header>
 
-    <nav>
-        <div class="menu">
-            <div class="choix"><a href="index.html">A l'affiche</a></div>
-            <div class="choix active"><a href="favoris.html">Favoris</a></div>
-            <div class="choix"><a href="calendrier.html">Calendrier</a></div>
-        </div>
+    <button class="burger" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="menu" id="menu">
+        <ul>
+            <li class="choix"><a href="index.html">A l'affiche</a></li>
+            <li class="choix"><a href="favoris.html">Favoris</a></li>
+            <li class="choix active"><a href="calendrier.html">Calendrier</a></li>
+        </ul>
     </nav>
 
     <div class="films">
@@ -32,6 +38,9 @@
                 </a>
                 <div class="info-film">
                     <h2><a class="titre-film" href="https://talking-red.pages.dev/">Talking Red (2023)</a></h2>
+                    <p>Réalisateur : Paul Thomas Anderson<br>
+                    Genre : Action, Drame, Comédie<br>
+                    Durée : 47h 63min<br>
                     <p class="synopsis">Une application d'enfance oubliée devient un cauchemar numérique. Face à un
                         avatar défaillant qui refuse de se taire, le joueur assiste à la mutation d'un simple jouet en
                         un témoin du vide. Une horreur minimaliste sur l'obsolescence et la décomposition du code.</p>
