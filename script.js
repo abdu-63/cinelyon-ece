@@ -6,24 +6,23 @@ burger.addEventListener('click', () => {
 });
 
 
-
-// récupère toutes les sections calendrier
+// récupère toutes les classes "calendrier"
 let SectionCalendrier = document.querySelectorAll('.calendrier');
 
 SectionCalendrier.forEach(section => {
-  let date = section.querySelectorAll('.date');
-  let ConteneurInfos = section.querySelector('.conteneur-infos');
+  let date = section.querySelectorAll('.date'); // tous
+  let ConteneurInfos = section.querySelector('.conteneur-infos'); // le 1er
 
-  date.forEach(pill => {
-    pill.addEventListener('click', () => {
-      let siActive = pill.classList.contains('active'); // verifie si la classe "active" existe
+  date.forEach(pilule => { // boucle sur chaque pilule
+    pilule.addEventListener('click', () => {
+      let siActive = pilule.classList.contains('active'); // verifie d'abord si la classe "active" existe
 
-      date.forEach(p => p.classList.remove('active')); // suprime la classe "active"
+      date.forEach(p => p.classList.remove('active')); // suprime la classe "active" pour en activer que 1
 
-      if (siActive) {
+      if (siActive) { // si pillule = active alors
         if (ConteneurInfos) ConteneurInfos.classList.remove('active'); // cache en recliquant
       } else {
-        pill.classList.add('active'); // ajoute la classe "active"
+        pilule.classList.add('active'); // ajoute la classe "active"
         if (ConteneurInfos) ConteneurInfos.classList.add('active'); // affiche en cliquant
       }
     });
@@ -32,29 +31,26 @@ SectionCalendrier.forEach(section => {
 
 
 
-window.addEventListener('load', () => {
-  let synopsis = document.querySelectorAll('.synopsis');
+window.addEventListener('load', () => { // attendre le chargement de la page
+  let tousLesSynopsis = document.querySelectorAll('.synopsis');
 
-  synopsis.forEach(synopsis => {
-    synopsis.classList.add('compresser'); // cache le synopsis au chargement
+  tousLesSynopsis.forEach(synopsis => {
+    synopsis.classList.add('compresser'); // cache les synopsis au chargement
 
-    if (synopsis.scrollHeight > synopsis.clientHeight) { // si synopsis trop long
+          // hauteur totale du txt      hauteur visible
+    if (synopsis.scrollHeight > synopsis.clientHeight) {
       let btn = document.createElement('button'); // crée bouton
       btn.classList.add('lire-plus-btn');
       btn.textContent = 'Lire plus';
-
+      // parentNode = div avec classe "info-film"
       synopsis.parentNode.insertBefore(btn, synopsis.nextSibling); // insère bouton après synopsis
 
       btn.addEventListener('click', () => {
-        if (synopsis.classList.contains('compresser')) {
-          synopsis.classList.remove('compresser');
-          btn.textContent = 'Réduire';
-        } else {
-          synopsis.classList.add('compresser');
-          btn.textContent = 'Lire plus';
-        }
+        synopsis.classList.toggle('compresser');
+        btn.textContent = synopsis.classList.contains('compresser') ? 'Lire plus' : 'Réduire'; // si fermé on peut l'ouvrir et si ouvert on peut le fermer
       });
-    } else {
+
+    } else { // si le synopsis est + ptit que la hauteur visible on le laisse
       synopsis.classList.remove('compresser');
     }
   });
