@@ -163,6 +163,38 @@ footer {
 
 .synopsis {
     margin-right: 10px;
+    margin-top: 8px;
+}
+
+.titre-film-heading {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.synopsis.compresser { /* max 3 lignes dans le synopsis */
+    display: -webkit-box; 
+    -webkit-line-clamp: 3; /* vieux navigateur */
+    line-clamp: 3; /* nouveau navigateur */
+    -webkit-box-orient: vertical; 
+    overflow: hidden; /* cache le reste du texte */
+}
+
+.lire-plus-btn {
+    background: none;
+    border: none;
+    color: #444cf7;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: healTheWebA, sans-serif;
+    padding: 0;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.lire-plus-btn:hover {
+    text-decoration: underline;
 }
 
 .horaire {
@@ -225,6 +257,10 @@ footer {
 .infos-date .duree {
     color: blue;
     font-weight: bold;
+}
+
+.description-film {
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 667px) {
