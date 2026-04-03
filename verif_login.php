@@ -7,7 +7,7 @@ if (isset($_POST['identifiant'], $_POST['mot_de_passe'])) {
     $mot_de_passe = htmlspecialchars($_POST['mot_de_passe']);
 
     // vérification des identifiants
-    if ($identifiant === 'admin' && $mot_de_passe === 'admin') {
+    if ($identifiant === '&lt;strong&gt;Dupont&lt;/strong&gt;' && $mot_de_passe === 'alibaba') {
         // si identifiants corrects alors affiche la page de bienvenue
         ?>
         <!DOCTYPE html>
