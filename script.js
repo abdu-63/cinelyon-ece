@@ -5,6 +5,17 @@ burger.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
+// détecte la page courante et active le bon onglet du menu
+let pageCourante = window.location.pathname.split('/').pop(); // ex: "favoris.php"
+let liensMenu = document.querySelectorAll('.menu .choix a');
+
+liensMenu.forEach(lien => {
+  if (lien.getAttribute('href') === pageCourante) {
+    lien.parentElement.classList.add('active'); // ajoute "active" sur le bon <li>
+  }
+});
+
+
 
 // récupère toutes les classes "calendrier"
 let SectionCalendrier = document.querySelectorAll('.calendrier');

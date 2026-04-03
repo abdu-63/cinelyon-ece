@@ -6,7 +6,7 @@
 
 <nav class="menu" id="menu">
     <ul>
-        <li class="choix active"><a href="index.php">A l'affiche</a></li>
+        <li class="choix"><a href="index.php">A l'affiche</a></li>
         <li class="choix"><a href="favoris.php">Favoris</a></li>
         <li class="choix"><a href="calendrier.php">Calendrier</a></li>
         <li class="choix"><a href="roadmap.php">Roadmap</a></li>

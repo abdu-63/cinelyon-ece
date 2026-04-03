@@ -16,28 +16,15 @@
         <p class="description">Les films à l'affiche chez CinéLyon</p>
     </header>
 
-    <button class="burger" id="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class="menu" id="menu">
-        <ul>
-            <li class="choix"><a href="index.php">A l'affiche</a></li>
-            <li class="choix active"><a href="favoris.php">Favoris</a></li>
-            <li class="choix"><a href="calendrier.php">Calendrier</a></li>
-            <li class="choix"><a href="roadmap.php">Roadmap</a></li>
-        </ul>
-    </nav>
+    <?php include('menu.php')?>
 
     <div class="box">
         <a href="images/talking_red.gif">
             <img class="poster" src="images/talking_red.gif" alt="Affiche du film Talking Red">
         </a>
         <div class="info-film">
-            <h2 class="titre-film-heading"><a class="titre-film" href="https://talking-red.pages.dev/">Talking Red
-                    (2023)</a></h2>
+            <h2 class="titre-film-heading"><a class="titre-film" href="https://talking-red.pages.dev/">Talking
+                    Red (2023)</a></h2>
             <p class="description-film">Réalisateur : Rovio Mobile<br>
                 Genre : Horreur<br>
                 Durée : 47h 63min<br>
@@ -50,37 +37,37 @@
     <div class="calendrier">
         <div class="horaire">
             <button class="date active">
-                <p>Sam 21 Mars</p>
+                <p>Sam 32 Mars</p>
             </button>
             <button class="date">
-                <p>Dim 22 Mars</p>
+                <p>Dim -4 Mars</p>
             </button>
         </div>
 
         <div class="conteneur-infos">
             <div class="infos-card">
                 <div class="cinema">
-                    <p>Lumière La Fourmi</p>
+                    <p>Maison</p>
                 </div>
                 <div class="infos-date">
                     <span class="langue">
                         <p>VO</p>
                     </span>
                     <span class="duree">
-                        <p>20:40</p>
+                        <p>03:60</p>
                     </span>
                 </div>
             </div>
             <div class="infos-card">
                 <div class="cinema">
-                    <p>UGC Internationale</p>
+                    <p>UGC Monluc</p>
                 </div>
                 <div class="infos-date">
                     <span class="langue">
                         <p>VO</p>
                     </span>
                     <span class="duree">
-                        <p>20:00</p>
+                        <p>00:38</p>
                     </span>
                 </div>
             </div>
