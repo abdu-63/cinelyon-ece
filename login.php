@@ -33,10 +33,10 @@
 
                     <div>
                         <label for="mot_de_passe">Mot de passe</label>
-                        <input type="mot_de_passe" id="mot_de_passe" name="mot_de_passe" required>
+                        <input type="password" id="mot_de_passe" name="mot_de_passe" required>
                     </div>
 
-                    <button type="verifier">Vérifier</button>
+                    <button type="submit">Vérifier</button>
                 </form>
             </div>
         </div>
