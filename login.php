@@ -15,7 +15,7 @@
     <main>
         <div>
             <div>
-                <h1>Connexion</h1>
+                <h1 class="titre-principale">Connexion</h1>
                 <p>Accédez à votre espace personnel</p>
 
                 <?php

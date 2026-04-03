@@ -27,7 +27,7 @@ if (isset($_POST['identifiant'], $_POST['mot_de_passe'])) {
             <main>
                 <div>
                     <div>
-                        <p>Connexion réussie</p>
+                        <p class="titre-principale">Connexion réussie</p>
                         <h2>Bonjour, <span><?= $identifiant ?></span> !</h2>
 
                         <p>Vous êtes bien connecté à votre espace personnel Cinélyon</p>
