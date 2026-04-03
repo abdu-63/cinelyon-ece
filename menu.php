@@ -10,5 +10,6 @@
         <li class="choix"><a href="favoris.php">Favoris</a></li>
         <li class="choix"><a href="calendrier.php">Calendrier</a></li>
         <li class="choix"><a href="roadmap.php">Roadmap</a></li>
+        <li class="choix"><a href="login.php">Connexion</a></li>
     </ul>
 </nav>
