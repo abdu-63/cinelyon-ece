@@ -7,6 +7,7 @@ burger.addEventListener('click', () => {
 
 // détecte la page courante et active le bon onglet du menu
 let pageCourante = window.location.pathname.split('/').pop(); // ex: "favoris.php"
+if (pageCourante === '') pageCourante = 'index.php'; // si accès via "/" → index.php
 let liensMenu = document.querySelectorAll('.menu .choix a');
 
 liensMenu.forEach(lien => {
