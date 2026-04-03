@@ -15,20 +15,8 @@
         <h1 class="titre-principale">CinéLyon</h1>
         <p class="description">Les films à l'affiche chez CinéLyon</p>
     </header>
-    <button class="burger" id="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
 
-    <nav class="menu" id="menu">
-        <ul>
-            <li class="choix active"><a href="index.html">A l'affiche</a></li>
-            <li class="choix"><a href="favoris.html">Favoris</a></li>
-            <li class="choix"><a href="calendrier.html">Calendrier</a></li>
-            <li class="choix"><a href="roadmap.html">Roadmap</a></li>
-        </ul>
-    </nav>
+    <?php include('menu.php')?>
 
     <div class="films">
         <div class="affiches">
